@@ -1,0 +1,52 @@
+.form-group {
+    label {
+        font-weight: 500;
+        font-size: 0.9em;
+        color: var(--color-text);
+    }
+
+    // .form-control {
+    //     border: 1px solid #dddddd;
+    //     border-radius: 5px;
+
+    //     &:focus {
+    //         box-shadow: none !important;
+    //         -webkit-box-shadow: none !important;
+    //         outline: 0px auto -webkit-focus-ring-color !important;
+    //         outline: none;
+    //         border: 1px solid var(--color-blue);
+    //     }
+
+    //     &:-webkit-autofill,
+    //     &:-webkit-autofill:hover,
+    //     &:-webkit-autofill:focus,
+    //     &:-webkit-autofill:active {
+    //         box-shadow: 0 0 0 30px white inset !important;
+    //         -webkit-box-shadow: 0 0 0 30px white inset !important;
+    //     }
+
+    //     &::-webkit-outer-spin-button,
+    //     &::-webkit-inner-spin-button {
+    //         -webkit-appearance: none;
+    //         margin: 0;
+    //     }
+    //     /* Firefox */
+    //     &[type="number"] {
+    //         -moz-appearance: textfield;
+    //     }
+
+    //     &[type="file"] {
+    //         padding-bottom: 2.3rem;
+    //     }
+
+    //     &input:read-only {
+    //         background-color: #e9ecef;
+    //         opacity: 1;
+    //     }
+    // }
+
+    span {
+        font-size: 0.875em;
+        color: #dc3545;
+    }
+}

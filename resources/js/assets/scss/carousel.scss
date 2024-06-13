@@ -1,0 +1,30 @@
+.slick-prev {
+    left: 0% !important;
+    z-index: 1;
+}
+.slick-next {
+    right: -2% !important;
+    z-index: 1;
+}
+
+.slick-arrow {
+    display: block;
+}
+
+.slick-arrow {
+    @media (max-width: 768px) {
+        display: none !important;
+    }
+}
+
+.slick-prev {
+    &::before {
+        content: url(../../assets/icons/arrow-left.svg) !important;
+    }
+}
+
+.slick-next {
+    &::before {
+        content: url(../../assets/icons/arrow-right.svg) !important;
+    }
+}

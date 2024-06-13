@@ -1,0 +1,64 @@
+.admin_dasboard_page {
+    width: 100%;
+    padding-bottom: 80px;
+
+    .overview_div {
+        margin-top: 50px;
+        padding: 20px 24px;
+        padding-bottom: 35px;
+        width: 100%;
+        background: var(--color-off-white);
+        border: 0.5px solid var(--color-blue);
+        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+
+        @media screen and (max-width: 550px) {
+            padding: 15px 12px;
+            padding-bottom: 20px;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin-top: 40px;
+        }
+
+        .flex_div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            background: var(--color-off-white);
+
+            .sub_section_header {
+                margin: 0;
+                margin-right: 12px;
+            }
+        }
+
+        .info_div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            @media screen and (max-width: 510px) {
+                display: block;
+
+                .overview_info {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .recent_requests_div {
+        margin-top: 60px;
+
+        .sub_section_header {
+            margin-bottom: 30px;
+        }
+
+        table {
+            @media screen and (max-width: 1620px) {
+                width: 1230px;
+            }
+        }
+    }
+}

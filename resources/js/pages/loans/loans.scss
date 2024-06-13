@@ -1,0 +1,122 @@
+.loans_page {
+    .banner {
+        padding-top: 150px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: var(--color-off-white);
+        border-radius: 0px 0px 40px 40px;
+
+        @media screen and (max-width: 830px) {
+            padding-top: 130px;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 650px) {
+            padding-top: 115px;
+        }
+
+        @media screen and (max-width: 420px) {
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        .banner_text_and_button {
+            margin: 0 auto;
+            width: 48%;
+            border-radius: 0px 0px 40px 40px;
+
+            @media screen and (max-width: 1600px) {
+                margin: 0;
+            }
+
+            @media screen and (max-width: 830px) {
+                width: 100%;
+            }
+
+            h1 {
+                color: var(--color-blue);
+                font-weight: bold;
+            }
+
+            h4 {
+                margin: 0;
+                color: var(--color-text);
+            }
+
+            .actions {
+                margin-bottom: 80px;
+
+                @media screen and (max-width: 830px) {
+                    margin-top: 45px;
+                    margin-bottom: 60px;
+                }
+
+                @media screen and (max-width: 335px) {
+                    margin-top: 35px;
+                    margin-bottom: 50px;
+                    align-items: flex-start;
+                }
+            }
+        }
+
+        .form_container {
+            margin: 0 auto;
+            margin-bottom: -20px !important;
+            max-width: 506px;
+
+            @media screen and (max-width: 1450px) {
+                margin: 0;
+            }
+
+            @media screen and (max-width: 1320px) {
+                width: 48%;
+            }
+
+            @media screen and (max-width: 830px) {
+                margin: 0 auto;
+                margin-bottom: -50px !important;
+                width: 100%;
+                max-width: 406px;
+            }
+
+            .loader_img {
+                display: flex;
+                margin: auto;
+            }
+        }
+    }
+
+    .loan_section {
+        margin: 0 auto;
+        max-width: 1500px;
+        margin-top: 130px;
+
+        @media screen and (max-width: 830px) {
+            margin-top: 150px;
+        }
+    }
+
+    .hero_section {
+        margin: 0 auto;
+        max-width: 1500px;
+        margin-top: 120px;
+        text-align: center;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 90px;
+        }
+    }
+
+    .faq_section {
+        margin: 0 auto;
+        max-width: 1500px;
+        display: flex;
+        justify-content: center;
+        margin-top: 120px;
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 90px;
+        }
+    }
+}

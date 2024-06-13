@@ -1,0 +1,15 @@
+.faq_page {
+    .faq_section {
+        margin: 0 auto;
+        max-width: 1500px;
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        margin-bottom: -30px;
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 70px;
+        }
+    }
+}

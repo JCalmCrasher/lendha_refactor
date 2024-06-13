@@ -1,0 +1,89 @@
+.sign_in_page {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+
+    .left_div {
+        position: relative;
+        width: 419px;
+
+        @media screen and (max-width: 960px) {
+            width: 500px;
+        }
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    .sign_in_container {
+        padding: 60px 12px;
+        width: 100%;
+
+        .form_container {
+            margin: 0 auto;
+            width: 400px;
+
+            @media screen and (max-width: 430px) {
+                width: 100%;
+            }
+
+            .sub_section_header {
+                margin-bottom: 30px;
+            }
+
+            .info {
+                padding: 6px 9px;
+                padding-bottom: 8px;
+                margin-bottom: 20px;
+                font-size: 0.95em;
+                font-weight: 600;
+                text-decoration: underline;
+                text-align: center;
+                color: #41464b;
+                border: 1px dashed var(--color-blue);
+                background: #e2e3e5;
+                border-radius: 3px;
+                box-shadow: 0px 4px 7px rgba(26, 31, 76, 0.04);
+                cursor: pointer;
+            }
+
+            p {
+                margin: 0;
+                font-weight: 500;
+                font-size: 0.93em;
+                color: var(--color-text);
+
+                &.forgot {
+                    margin-top: -10px;
+                    text-align: right;
+                }
+
+                &.dont {
+                    margin-top: 15px;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: underline;
+                    font-weight: bold;
+                    color: var(--color-text);
+                }
+            }
+
+            .btn_blue {
+                padding: 8px 30px;
+                padding-bottom: 10px;
+                font-weight: bold;
+                width: 100%;
+            }
+        }
+    }
+
+    button {
+        margin-top: 30px;
+    }
+}

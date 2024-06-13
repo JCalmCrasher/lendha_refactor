@@ -1,0 +1,113 @@
+.feature_preview_with_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    &.right {
+        flex-direction: row-reverse;
+
+        .feature_preview_image {
+            margin-right: 0px;
+            margin-left: 50px;
+
+            @media screen and (max-width: 700px) {
+                margin: 0 auto;
+                margin-top: 60px;
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        display: flex;
+        flex-direction: column-reverse !important;
+        align-items: flex-start;
+    }
+
+    .feature_preview_image {
+        margin-right: 50px;
+        max-width: 340px;
+        max-height: 420px;
+        object-fit: cover;
+
+        @media screen and (max-width: 880px) {
+            width: 38%;
+        }
+
+        @media screen and (max-width: 700px) {
+            margin: 0 auto;
+            margin-top: 60px;
+            width: 280px;
+            height: 320px;
+        }
+
+        &.loading {
+            width: 100%;
+            filter: var(--image-blur);
+            -webkit-filter: var(--image-blur);
+            transition: "opacity .15s linear";
+        }
+    }
+
+    .feature_preview_info {
+        max-width: 600px;
+
+        @media screen and (max-width: 700px) {
+            margin: 0;
+            max-width: fit-content;
+        }
+
+        .feature_preview_text {
+            font-size: 1em;
+            color: var(--color-text);
+        }
+
+        .feature_preview_list {
+            margin-top: 26px;
+            margin-bottom: 45px;
+
+            .list {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 17px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                img {
+                    margin-right: 15px;
+                }
+
+                p {
+                    margin: 0;
+                    margin-top: -2px;
+                    font-size: 1em;
+                    color: var(--color-text);
+                }
+            }
+        }
+    }
+}
+
+.slider-testimonial {
+    max-width: 390px;
+}
+
+.slider-testimonial {
+    @media screen and (max-width: 700px) {
+        max-width: 100%;
+    }
+}
+
+img.slider-img {
+    @media only screen and (max-device-width: 640px) {
+        margin-left: 0 auto !important;
+    }
+}
+img.slider-img {
+    @media screen and (min-width: 700px) {
+        margin-left: 30px !important;
+    }
+}

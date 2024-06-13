@@ -1,0 +1,220 @@
+.foodmart_page {
+    overflow: hidden;
+
+    .banner {
+        padding-right: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: var(--color-off-white);
+        border-radius: 0px 0px 40px 40px;
+
+        @media screen and (max-width: 830px) {
+            padding-top: 130px;
+            padding-right: 30px;
+            margin-bottom: 160px;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 797px) {
+            padding-right: 20px;
+        }
+
+        @media screen and (max-width: 550px) {
+            padding-right: 10px;
+        }
+
+        @media screen and (max-width: 650px) {
+            padding-top: 115px;
+        }
+
+        @media screen and (max-width: 420px) {
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        .banner_text_and_button {
+            padding-top: 150px;
+            width: 47%;
+            border-radius: 0px 0px 40px 40px;
+
+            @media screen and (max-width: 830px) {
+                padding-top: 0px;
+                width: 100%;
+            }
+
+            h1 {
+                color: var(--color-blue);
+                font-weight: bold;
+            }
+
+            h4 {
+                margin: 0;
+                color: var(--color-text);
+                min-height: 31px;
+
+                @media screen and (max-width: 1079px) {
+                    min-height: auto;
+                }
+            }
+
+            .actions {
+                margin-bottom: 80px;
+
+                @media screen and (max-width: 830px) {
+                    margin-top: 45px;
+                    margin-bottom: 60px;
+                }
+
+                @media screen and (max-width: 335px) {
+                    margin-top: 35px;
+                    margin-bottom: 50px;
+                    align-items: flex-start;
+
+                    a.wide {
+                        width: 190px !important;
+                    }
+                }
+            }
+        }
+
+        .banner_image_container {
+            padding-top: 60px;
+            display: flex;
+            justify-content: flex-start;
+            width: 48%;
+            height: 600px;
+            border-radius: 0px 0px 40px 0px;
+
+            @media screen and (max-width: 1600px) {
+                height: 600px;
+            }
+
+            @media screen and (max-width: 1079px) {
+                height: 500px;
+            }
+
+            @media screen and (max-width: 910px) {
+                height: 520px;
+            }
+
+            @media screen and (max-width: 830px) {
+                padding-top: 0px;
+                margin: 0 auto;
+                margin-bottom: -60px;
+                width: 450px;
+                height: 350px;
+                box-shadow: 0px 6px 15px 2px rgba(51, 51, 51, 0.2);
+            }
+
+            @media screen and (max-width: 500px) {
+                margin: 0;
+                margin-bottom: -60px;
+                width: 99%;
+                height: 300px;
+            }
+
+            @media screen and (max-width: 420px) {
+                height: 250px;
+                border-radius: 0px 0px 20px 0px;
+            }
+
+            .border_image {
+                margin-right: -1px;
+                width: 7px;
+                height: auto;
+            }
+
+            .banner_image {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+
+                &.loading {
+                    filter: var(--image-blur);
+                    -webkit-filter: var(--image-blur);
+                    transition: "opacity .15s linear";
+                }
+            }
+        }
+    }
+
+    .working_section {
+        margin: 0 auto;
+        max-width: 1500px;
+        margin-top: 120px;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 90px;
+        }
+
+        @media screen and (max-width: 550px) {
+            .feature {
+                text-align: center;
+            }
+        }
+    }
+
+    .packages_section {
+        margin-top: 120px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background: var(--color-off-white);
+
+        .alert_container {
+            position: relative;
+            top: auto;
+            right: auto;
+            margin: 0 auto;
+            margin-top: -20px;
+            margin-bottom: 70px;
+            z-index: 1;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-top: 90px;
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+
+        .foodmart_packages {
+            margin: 0 auto;
+            max-width: 1500px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 50px;
+            grid-row-gap: 50px;
+
+            @media screen and (max-width: 1170px) {
+                grid-column-gap: 20px;
+                grid-row-gap: 50px;
+            }
+
+            @media screen and (max-width: 1130px) {
+                grid-template-columns: repeat(1, 1fr);
+                grid-row-gap: 32px;
+            }
+        }
+    }
+
+    .hero_section {
+        margin: 0 auto;
+        max-width: 1500px;
+        margin-top: 120px;
+        text-align: center;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 90px;
+        }
+    }
+
+    .faq_section {
+        margin: 0 auto;
+        max-width: 1500px;
+        margin-top: 120px;
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 90px;
+        }
+    }
+}

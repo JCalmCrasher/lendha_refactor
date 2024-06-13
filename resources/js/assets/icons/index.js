@@ -1,0 +1,17 @@
+export { default as applicantsIcon } from './applicants.svg';
+export { default as approvalIcon } from './approval.svg';
+export { default as chooseIcon } from './choose.svg';
+export { default as customerIcon } from './customer.svg';
+export { default as deliveryIcon } from './delivery.svg';
+export { default as facebookIcon } from './facebook.svg';
+export { default as instagramIcon } from './instagram.svg';
+export { default as youtubeIcon } from './youtube.svg';
+export { default as linkedinIcon } from './linkedin.svg';
+export { default as interestIcon } from './interest.svg';
+export { default as paperworkIcon } from './paperwork.svg';
+export { default as registerIcon } from './register.svg';
+export { default as repaymentIcon } from './repayment.svg';
+export { default as twitterIcon } from './twitter.svg';
+export { default as uptoIcon } from './upto.svg';
+export { default as SuccessIcon } from './success.svg';
+export { default as CopyIcon } from './copy-icon';

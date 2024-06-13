@@ -1,0 +1,92 @@
+.table_container {
+    .table-responsive {
+        background: #ffffff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+        border-radius: 0px 0px 3px;
+
+        &::-webkit-scrollbar {
+            height: 8px;
+            background: var(--color-off-white);
+        }
+        &::-webkit-scrollbar-thumb {
+            height: 0px;
+            background: #bbb;
+        }
+
+        .table {
+            margin: 0;
+
+            thead {
+                tr {
+                    background: #f4f7ff;
+                    border-radius: 5px 5px 0px 0px;
+
+                    th {
+                        padding: 6px 16px;
+                        padding-right: 0px;
+                        padding-bottom: 8px;
+                        font-weight: bold;
+                        font-size: 0.9em;
+                        color: var(--color-text);
+                        border: none;
+
+                        &:last-child {
+                            padding-right: 16px;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    background: var(--color-white);
+                    border-bottom: 0.5px solid #eeeeee;
+
+                    &:nth-child(even) {
+                        background: rgba(244, 247, 255, 0.4);
+                    }
+
+                    &:last-child {
+                        border: none;
+                    }
+
+                    td {
+                        padding: 17px 16px;
+                        padding-right: 0px;
+                        padding-bottom: 18px;
+                        font-weight: normal;
+                        font-size: 1em;
+                        color: var(--color-text);
+                        border: none;
+
+                        &:last-child {
+                            padding-right: 16px;
+                        }
+
+                        .text_wrap {
+                            margin: 0;
+                            max-width: 140px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+
+                            a {
+                                color: var(--color-blue);
+                                font-weight: bold;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .no_records {
+        padding: 20px 12px;
+        text-align: center;
+        background: #ffffff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+        border-radius: 0px 0px 3px;
+    }
+}

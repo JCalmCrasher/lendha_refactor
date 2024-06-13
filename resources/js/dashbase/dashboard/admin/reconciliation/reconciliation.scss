@@ -1,0 +1,35 @@
+.admin_reconciliation_page {
+    width: 100%;
+    padding-bottom: 80px;
+
+    .reconciliation_div {
+        margin-top: 45px;
+
+        .sub_section_header {
+            margin-bottom: 40px;
+        }
+
+        table {
+            @media screen and (max-width: 1620px) {
+                width: 1230px;
+            }
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 22px;
+
+            @media screen and (max-width: 760px) {
+                flex-direction: column;
+            }
+
+            .stat {
+                width: 400px;
+
+                @media screen and (max-width: 760px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

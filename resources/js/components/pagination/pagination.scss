@@ -1,0 +1,52 @@
+.pagination {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    justify-content: flex-end;
+    text-align: end;
+    margin: 0px;
+    margin-top: 20px;
+    width: 100%;
+
+    @media screen and (max-width: 400px) {
+        display: block;
+        padding-top: 8px;
+        height: 39px;
+        overflow-x: scroll;
+    }
+
+    li {
+        display: inline;
+        color: black;
+        cursor: pointer;
+
+        a {
+            padding: 8px 14px;
+            border: 1px solid #cccccc;
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            outline: none;
+            background: var(--color-white);
+
+            &:hover {
+                color: var(--color-white) !important;
+                background-color: var(--color-blue);
+                border: 1px solid var(--color-blue);
+            }
+        }
+
+        &.active a {
+            color: var(--color-white);
+            background-color: var(--color-blue);
+            border: 1px solid var(--color-blue);
+        }
+
+        &.disabled a {
+            border: 1px solid #cccccc;
+            color: var(--color-white);
+            cursor: not-allowed;
+            background-color: #cccccc;
+        }
+    }
+}

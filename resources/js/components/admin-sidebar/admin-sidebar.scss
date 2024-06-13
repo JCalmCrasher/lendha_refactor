@@ -1,0 +1,58 @@
+.sidebar_div {
+    padding: 48px 0px 0px 0px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 260px;
+    overflow-y: hidden;
+    border-right: 1px solid var(--color-blue);
+    background: var(--color-off-white);
+    display: none;
+
+    &.open {
+        display: block;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        background: var(--color-off-white);
+    }
+    &::-webkit-scrollbar-thumb {
+        width: 0px;
+        background: #bbb;
+    }
+
+    .link {
+        margin-bottom: 8px;
+        font-size: 1em;
+
+        &:nth-child(1) {
+            margin-top: 12px;
+        }
+
+        a {
+            display: flex;
+            padding: 9px 12px;
+            padding-bottom: 10px;
+            color: var(--color-text);
+            width: 100%;
+            border: 2px solid rgba(26, 31, 76, 0.009);
+            border-left: 5px solid rgba(26, 31, 76, 0.009);
+            background: rgba(26, 31, 76, 0.009);
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            &.active {
+                font-weight: 500;
+                color: var(--color-off-white);
+                border-left: 5px solid var(--color-yellow);
+                border-right: none;
+                background: var(--color-blue);
+            }
+        }
+    }
+}

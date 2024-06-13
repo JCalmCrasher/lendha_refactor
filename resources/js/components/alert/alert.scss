@@ -1,0 +1,109 @@
+.alert_container {
+    position: fixed;
+    top: 65px;
+    right: 5px;
+    display: flex;
+    height: auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    max-width: 600px;
+    border-radius: 0px 3px 3px 0px;
+    box-shadow: 0px 4px 7px rgba(26, 31, 76, 0.04);
+    z-index: 10000;
+
+    @media screen and (max-width: 420px) {
+        right: 0px;
+        margin: 0 5px;
+    }
+
+    &.info {
+        color: #636464;
+        border: 1px solid #f4f7ff;
+        border-left: 4px dashed var(--color-blue);
+        background: #fefefe;
+
+        a {
+            color: #636464;
+        }
+    }
+
+    &.secondary {
+        color: #41464b;
+        border: 1px solid #d3d6d8;
+        border-left: 4px dashed var(--color-blue);
+        background: #e2e3e5;
+
+        a {
+            color: #41464b;
+        }
+    }
+
+    &.success {
+        color: #0f5132;
+        border: 1px solid #badbcc;
+        border-left: 4px dashed var(--color-blue);
+        background: #d1e7dd;
+
+        a {
+            color: #0f5132;
+        }
+    }
+
+    &.error {
+        color: #842029;
+        border: 1px solid #f5c2c7;
+        border-left: 4px dashed var(--color-blue);
+        background: #f8d7da;
+
+        a {
+            color: #842029;
+        }
+    }
+
+    .alert_side_line {
+        height: fit-content;
+        height: -moz-fit-content;
+        width: 8px;
+    }
+
+    .alert {
+        margin: 0;
+        padding: 8px 20px;
+        padding-bottom: 11px;
+
+        @media screen and (max-width: 420px) {
+            padding: 6px 9px;
+            padding-bottom: 8px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.05em;
+            font-weight: 500;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @media screen and (max-width: 420px) {
+                font-size: 1em;
+            }
+
+            a {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .close_div {
+        padding: 0px 2px;
+        display: flex;
+        align-items: center;
+        height: inherit;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 0px 3px 3px 0px;
+        cursor: pointer;
+    }
+}

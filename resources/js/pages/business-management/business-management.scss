@@ -1,0 +1,95 @@
+.business_page {
+    .banner {
+        padding: 100px 100px 50px 100px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: var(--color-off-white);
+
+        @media screen and (max-width: 830px) {
+            padding: 100px 12px 12px 12px;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 650px) {
+            padding-top: 115px;
+        }
+
+        @media screen and (max-width: 420px) {
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        .banner_text_and_button {
+            margin: 0 auto;
+            width: 48%;
+            border-radius: 0px 0px 40px 40px;
+
+            @media screen and (max-width: 1600px) {
+                margin: 0;
+            }
+
+            @media screen and (max-width: 830px) {
+                width: 100%;
+            }
+
+            h1 {
+                color: var(--color-blue);
+                font-weight: bold;
+            }
+
+            h4 {
+                margin: 0;
+                color: var(--color-text);
+            }
+
+            .actions {
+                margin-bottom: 80px;
+
+                @media screen and (max-width: 830px) {
+                    margin-top: 45px;
+                    margin-bottom: 60px;
+                }
+
+                @media screen and (max-width: 335px) {
+                    margin-top: 35px;
+                    margin-bottom: 50px;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+
+    .business-management {
+        display: flex;
+        flex-direction: column;
+        width: 31%;
+        padding: 20px;
+
+        @media screen and (max-width: 830px) {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .business-management__icon,
+        .business-management__title {
+            margin-bottom: 20px;
+        }
+
+        h3.business-management__title {
+
+            @media screen and (max-width: 830px) {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+
+            font-weight: 500;
+            line-height: 1.4;
+        }
+    }
+
+    img.banner-image {
+        @media screen and (max-width: 830px) {
+            margin-top: 20px;
+        }
+    }
+}

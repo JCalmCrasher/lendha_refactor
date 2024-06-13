@@ -1,0 +1,11 @@
+.button_component {
+    &.loading {
+        padding: 6px 30px !important;
+        padding-bottom: 7px !important;
+    }
+
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}

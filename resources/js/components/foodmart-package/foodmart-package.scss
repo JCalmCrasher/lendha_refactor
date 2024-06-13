@@ -1,0 +1,56 @@
+.foodmart_package {
+    display: flex;
+    margin: 0 auto;
+    width: 450px;
+    background: var(--color-white);
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+
+    @media screen and (max-width: 475px) {
+        width: 100%;
+    }
+
+    img {
+        width: 170px;
+        height: 164px;
+        object-fit: contain;
+        border-right: 1px solid var(--color-blue);
+
+        @media screen and (max-width: 380px) {
+            width: 130px;
+            height: inherit;
+        }
+    }
+
+    .info {
+        padding: 16px 20px 16px 20px;
+
+        @media screen and (max-width: 380px) {
+            padding: 16px 15px 16px 15px;
+        }
+
+        h5 {
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 1.2em;
+            color: var(--color-text);
+        }
+
+        h6 {
+            margin-bottom: 32px;
+            font-weight: bold;
+            font-size: 1.35em;
+            color: var(--color-text);
+        }
+
+        button {
+            padding: 7px 28px;
+            padding-bottom: 9px;
+
+            @media screen and (max-width: 380px) {
+                padding: 7px 18px;
+                padding-bottom: 9px;
+            }
+        }
+    }
+}

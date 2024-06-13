@@ -1,0 +1,106 @@
+.filter_div {
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 7px 8px;
+    padding-bottom: 6px;
+    border: 1px solid rgba(26, 31, 76, 0.2);
+    border-radius: 3px;
+
+    // @media screen and (max-width: 420px) {
+    //   gap: 5px;
+    //   grid-template-columns: repeat(1, 1fr);
+    // }
+
+    .form-group {
+        margin: 0;
+
+        @media screen and (max-width: 420px) {
+            &:not(:first-child) {
+                margin-left: 12px !important;
+            }
+
+            *.form-control {
+                font-size: 14px;
+            }
+        }
+    }
+
+    button {
+        margin: 0 0 0 auto;
+        padding: 5px 24px;
+        padding-bottom: 6px;
+        height: fit-content;
+        height: -moz-fit-content;
+        width: fit-content;
+        width: -moz-fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        @media screen and (max-width: 400px) {
+            padding: 5px 12px;
+            padding-bottom: 6px;
+        }
+
+        &.loading {
+            padding: 3px 30px !important;
+            padding-bottom: 5px !important;
+
+            @media screen and (max-width: 400px) {
+                padding: 3px 18px !important;
+                padding-bottom: 5px !important;
+            }
+
+            .loader_img {
+                width: 25px;
+            }
+        }
+    }
+}
+
+.grid_filter {
+    margin-bottom: 10px;
+    padding: 7px 8px;
+    padding-bottom: 6px;
+    border: 1px solid rgba(26, 31, 76, 0.2);
+    border-radius: 3px;
+
+    .d-flex {
+        gap: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .button_component {
+        margin-left: auto;
+    }
+
+    @media screen and (max-width: 420px) {
+        .action {
+            flex-direction: column;
+            margin-bottom: 8px;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+button.button_component.clear{
+    background-color: #fff;
+    border: 1px solid #1a1f4c;
+    border-radius: 5px;
+
+    &:active {
+        background-color: #f5f5f5;
+    }
+}
